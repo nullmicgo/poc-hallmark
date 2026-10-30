@@ -1,0 +1,61 @@
+{
+  "summary": {
+    "fails": 0,
+    "reflex": 2,
+    "warns": 3,
+    "waived": 0,
+    "rejected": 0,
+    "answered": 0,
+    "dismissed": 0,
+    "notes": 0,
+    "files": 1,
+    "render": "off"
+  },
+  "findings": [
+    {
+      "gate": "26b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "clean\\index.html",
+      "line": 1,
+      "evidence": "no :active styling anywhere",
+      "fix": "All eight states; guard: not a form control, no aria-disabled anywhere"
+    },
+    {
+      "gate": "26b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "clean\\index.html",
+      "line": 1,
+      "evidence": "no :disabled styling anywhere",
+      "fix": "All eight states; guard: not a form control, no aria-disabled anywhere"
+    },
+    {
+      "gate": "F1",
+      "grade": "WARN",
+      "tier": "finish",
+      "file": "clean\\index.html",
+      "line": 72,
+      "evidence": "straight quote in prose x1 (first: opens your phone's message app)",
+      "fix": "Use typographic quotes: “ ” ’"
+    },
+    {
+      "gate": "F3",
+      "grade": "WARN",
+      "tier": "finish",
+      "file": "clean\\index.html",
+      "line": 26,
+      "evidence": "no text-wrap: balance on any display head (3 head rule(s), e.g. h1)",
+      "fix": "Add text-wrap: balance to h1/h2-level heads"
+    },
+    {
+      "gate": "F23",
+      "grade": "WARN",
+      "tier": "finish",
+      "file": "clean\\index.html",
+      "line": 1,
+      "evidence": "the document lacks a meta description",
+      "fix": "Name the language, title the page in its own words, and describe it in one sentence for link previews"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fieldnote, appointment records for a small physio practice</title>
+  <style>
+    /* Hallmark decisions: editorial genre; one serif family; accent used only on the primary action;
+       no eyebrow above any heading; the page ends on the booking form; no newsletter block; no hyphens. */
+    :root {
+      --ink: #1a1a1a;
+      --ink-soft: #4a4a4a;
+      --paper: #f7f5f0;
+      --line: #c9c4ba;
+      --surface: #fdfcfa;
+      --accent: #8a3b12;
+      --accent-deep: #6f2f0e;
+      --focus: #0b5fff;
+      --radius: 2px;
+    }
+    * { box-sizing: border-box; }
+    html, body { overflow-x: clip; }
+    body { margin: 0; background: var(--paper); color: var(--ink);
+           font: 18px/1.6 Georgia, "Times New Roman", serif; }
+    .wrap { max-width: 44rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+    h1 { font-size: 2.6rem; line-height: 1.15; margin: 0 0 1rem; letter-spacing: -0.01em; }
+    h2 { font-size: 1.35rem; margin: 3rem 0 0.5rem; }
+    p { margin: 0 0 1rem; }
+    .lede { font-size: 1.15rem; max-width: 34rem; color: var(--ink-soft); }
+    dl { display: grid; grid-template-columns: 9rem 1fr; gap: 0.4rem 1rem; margin: 1rem 0 0; }
+    dt { font-weight: 600; color: var(--ink); }
+    dd { margin: 0; }
+    form { margin-top: 3rem; display: grid; gap: 0.6rem; max-width: 24rem; }
+    label { font-size: 0.95rem; }
+    input { font: inherit; padding: 0.6rem 0.7rem; border: 1px solid var(--line);
+            background: var(--surface); color: var(--ink); border-radius: var(--radius); }
+    button { font: inherit; padding: 0.7rem 1.1rem; border: 0; background: var(--accent);
+             color: var(--surface); cursor: pointer; border-radius: var(--radius); }
+    button:hover { background: var(--accent-deep); }
+    a:focus-visible, button:focus-visible, input:focus-visible {
+      outline: 3px solid var(--focus); outline-offset: 2px;
+    }
+    .note { color: var(--ink-soft); font-size: 0.9rem; margin-top: 0.75rem; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+    @media (max-width: 30rem) { dl { grid-template-columns: 1fr; } h1 { font-size: 2rem; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Book a physiotherapy appointment</h1>
+    <p class="lede">Fieldnote keeps the appointment book for one two room practice in Bristol. You book here, and we confirm by text the same day.</p>
+
+    <h2>What you get</h2>
+    <dl>
+      <dt>Assessment</dt><dd>A 45 minute first appointment, hands on, no forms to fill before you arrive.</dd>
+      <dt>Follow ups</dt><dd>30 minutes, booked at the desk or from the link in your confirmation text.</dd>
+      <dt>Cancellation</dt><dd>Free up to 24 hours before. Later than that is charged at half.</dd>
+    </dl>
+
+    <h2>Where</h2>
+    <p>Two rooms on Gloucester Road, ground floor, step free entrance. Parking on the street after 6pm.</p>
+
+    <form action="#booked" method="get">
+      <label for="name">Your name</label>
+      <input id="name" name="name" autocomplete="name" required>
+      <label for="phone">Mobile number</label>
+      <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+      <label for="when">Preferred day</label>
+      <input id="when" name="when" type="date" required>
+      <button type="submit">Book this appointment</button>
+    </form>
+    <p id="booked" class="note">Submitting opens your phone's message app with the booking ready to send. Nothing is stored on this page.</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,133 @@
+{
+  "summary": {
+    "fails": 9,
+    "reflex": 2,
+    "warns": 2,
+    "waived": 0,
+    "rejected": 0,
+    "answered": 0,
+    "dismissed": 0,
+    "notes": 0,
+    "files": 1,
+    "render": "off"
+  },
+  "findings": [
+    {
+      "gate": "19",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "slop\\index.html",
+      "line": 6,
+      "evidence": "dash \"—\" in copy",
+      "fix": "A comma, a colon, a full stop or parentheses; never a dash"
+    },
+    {
+      "gate": "19",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "slop\\index.html",
+      "line": 10,
+      "evidence": "buzzword \"Unlock\"",
+      "fix": "Say what the product does, in its own nouns"
+    },
+    {
+      "gate": "19",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "slop\\index.html",
+      "line": 11,
+      "evidence": "buzzword \"cutting-edge\"",
+      "fix": "Say what the product does, in its own nouns"
+    },
+    {
+      "gate": "19",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "slop\\index.html",
+      "line": 11,
+      "evidence": "buzzword \"next-generation\"",
+      "fix": "Say what the product does, in its own nouns"
+    },
+    {
+      "gate": "19",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "slop\\index.html",
+      "line": 11,
+      "evidence": "buzzword \"empower\"",
+      "fix": "Say what the product does, in its own nouns"
+    },
+    {
+      "gate": "26a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "slop\\index.html",
+      "line": 1,
+      "evidence": "no :focus-visible styling anywhere",
+      "fix": "A focus ring at 3:1 or better, instant"
+    },
+    {
+      "gate": "34",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "slop\\index.html",
+      "line": 1,
+      "evidence": "no overflow-x: clip on html and body",
+      "fix": "overflow-x: clip on both html and body"
+    },
+    {
+      "gate": "38i",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "slop\\index.html",
+      "line": 10,
+      "evidence": "<em>/<i> inside <h1>",
+      "fix": "Roman headers; emphasis via weight or accent"
+    },
+    {
+      "gate": "54",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "slop\\index.html",
+      "line": 9,
+      "evidence": "eyebrow \"INTRODUCING\" before <h1>",
+      "fix": "Cut it; the heading already says this (craft.md § 7 has twelve other openings)"
+    },
+    {
+      "gate": "26b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "slop\\index.html",
+      "line": 1,
+      "evidence": "no :active styling anywhere",
+      "fix": "All eight states; guard: not a form control, no aria-disabled anywhere"
+    },
+    {
+      "gate": "26b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "slop\\index.html",
+      "line": 1,
+      "evidence": "no :disabled styling anywhere",
+      "fix": "All eight states; guard: not a form control, no aria-disabled anywhere"
+    },
+    {
+      "gate": "F1",
+      "grade": "WARN",
+      "tier": "finish",
+      "file": "slop\\index.html",
+      "line": 34,
+      "evidence": "straight quote in prose x1 (first: Thanks! We'll be in touch)",
+      "fix": "Use typographic quotes: “ ” ’"
+    },
+    {
+      "gate": "F23",
+      "grade": "WARN",
+      "tier": "finish",
+      "file": "slop\\index.html",
+      "line": 1,
+      "evidence": "the document lacks a meta description",
+      "fix": "Name the language, title the page in its own words, and describe it in one sentence for link previews"
+    }
+  ]
+}
